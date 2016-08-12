@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<profile>
+  <environments>
+    <add name="dev" dataCenter="ALL" target="dev" iis="ALL" net="ALL" />
+    <add name="fws" dataCenter="ALL" target="fws" iis="ALL" net="ALL" />
+    <add name="prd" dataCenter="ALL" target="prd" iis="ALL" net="ALL" />
+    <add name="fat" dataCenter="sh,nt" target="fat" iis="IIS6,IIS7" net="Net2,Net4" />
+    <add name="lpt" dataCenter="sh,nt" target="lpt" iis="IIS6,IIS7" net="Net2,Net4" />
+    <add name="uat_nt" dataCenter="ALL" target="uat_nt" iis="ALL" net="ALL" />
+  </environments>
+
+  <dev>
+    <DBDataCenter></DBDataCenter>
+    <CompilationDebug>true</CompilationDebug>
+    <DbTracingEnabled>true</DbTracingEnabled>
+
+    <LoggingServer.V2.IP>collector.logging.fws.qa.nt.ctripcorp.com</LoggingServer.V2.IP>
+    <LoggingServer.V2.Port>63100</LoggingServer.V2.Port>
+    <SSOUrl>http://cas.uat.qa.nt.ctripcorp.com/caso</SSOUrl>
+    <FxConfigServiceUrl>http://ws.config.framework.fws.qa.nt.ctripcorp.com/configws/</FxConfigServiceUrl>
+
+    <CtripDomain>fws.qa.nt.ctripcorp.com</CtripDomain>
+  </dev>
+
+  <fws>
+    <DBDataCenter></DBDataCenter>
+    <CompilationDebug>false</CompilationDebug>
+    <DbTracingEnabled>false</DbTracingEnabled>
+
+    <LoggingServer.V2.IP>collector.logging.fws.qa.nt.ctripcorp.com</LoggingServer.V2.IP>
+    <LoggingServer.V2.Port>63100</LoggingServer.V2.Port>
+    <SSOUrl>http://cas.uat.qa.nt.ctripcorp.com/caso</SSOUrl>
+    <FxConfigServiceUrl>http://ws.config.framework.fws.qa.nt.ctripcorp.com/configws/</FxConfigServiceUrl>
+
+    <CtripDomain>fws.qa.nt.ctripcorp.com</CtripDomain>
+  </fws>
+
+  <prd>
+    <DBDataCenter>_sh</DBDataCenter>
+    <CompilationDebug>false</CompilationDebug>
+    <DbTracingEnabled>false</DbTracingEnabled>
+
+    <LoggingServer.V2.IP>collector.logging.sh.ctriptravel.com</LoggingServer.V2.IP>
+    <LoggingServer.V2.Port>63100</LoggingServer.V2.Port>
+    <SSOUrl>https://cas.ctripcorp.com/caso/</SSOUrl>
+    <FxConfigServiceUrl>http://ws.config.framework.ctripcorp.com/configws</FxConfigServiceUrl>
+
+    <CtripDomain>ctripcorp.com</CtripDomain>
+  </prd>
+
+  <fat>
+    <DBDataCenter></DBDataCenter>
+    <CompilationDebug>false</CompilationDebug>
+    <DbTracingEnabled>false</DbTracingEnabled>
+
+    <LoggingServer.V2.IP>collector.logging.fws.qa.nt.ctripcorp.com</LoggingServer.V2.IP>
+    <LoggingServer.V2.Port>63100</LoggingServer.V2.Port>
+    <FxConfigServiceUrl>http://ws.config.framework.fws.qa.nt.ctripcorp.com/configws/</FxConfigServiceUrl>
+	  <SSOUrl>http://cas.uat.qa.nt.ctripcorp.com/caso</SSOUrl>
+
+    <CtripDomain>fws.qa.nt.ctripcorp.com</CtripDomain>
+  </fat>
+
+  <lpt>
+    <DBDataCenter></DBDataCenter>
+    <CompilationDebug>false</CompilationDebug>
+    <DbTracingEnabled>false</DbTracingEnabled>
+
+    <LoggingServer.V2.IP>collector.logging.fws.qa.nt.ctripcorp.com</LoggingServer.V2.IP>
+    <LoggingServer.V2.Port>63100</LoggingServer.V2.Port>
+    <FxConfigServiceUrl>http://ws.config.framework.lpt.qa.nt.ctripcorp.com/configws/</FxConfigServiceUrl>
+    <SSOUrl>http://cas.uat.qa.nt.ctripcorp.com/caso</SSOUrl>
+
+    <CtripDomain>fws.qa.nt.ctripcorp.com</CtripDomain>
+  </lpt>
+
+  <uat_nt>
+    <DBDataCenter></DBDataCenter>
+    <CompilationDebug>false</CompilationDebug>
+    <DbTracingEnabled>false</DbTracingEnabled>
+
+    <LoggingServer.V2.IP>collector.logging.uat.qa.nt.ctripcorp.com</LoggingServer.V2.IP>
+    <LoggingServer.V2.Port>63100</LoggingServer.V2.Port>
+    <FxConfigServiceUrl>http://ws.config.framework.uat.qa.nt.ctripcorp.com/configws/</FxConfigServiceUrl>
+    <SSOUrl>http://cas.uat.qa.nt.ctripcorp.com/caso</SSOUrl>
+
+    <CtripDomain>uat.qa.nt.ctripcorp.com</CtripDomain>
+  </uat_nt>
+</profile>
+
